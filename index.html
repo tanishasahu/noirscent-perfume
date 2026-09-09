@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NoirScent — Luxury Fragrances</title>
+
+    <meta name="description"
+        content="Discover luxury perfumes, signature scents and exclusive fragrance collections at NoirScent.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- AOS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+    <div class="loader-logo">
+        NOIR<span>SCENT</span>
+    </div>
+    <div class="loader-line"></div>
+</div>
+
+<!-- ANNOUNCEMENT -->
+<div class="announcement">
+    <p>
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Complimentary shipping on orders over ₹2,999
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </p>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+
+    <a href="#home" class="logo">
+        <span class="logo-mark">N</span>
+
+        <span class="logo-text">
+            NOIR<span>SCENT</span>
+        </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#categories">Collections</a>
+        <a href="#products">Shop</a>
+        <a href="#about">Our Story</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="nav-icon" id="searchBtn" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="nav-icon" id="wishlistBtn" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="nav-count" id="wishlistCount">0</span>
+        </button>
+
+        <button class="nav-icon" id="cartBtn" aria-label="Shopping Bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="nav-count" id="cartCount">0</span>
+        </button>
+
+        <button class="mobile-menu" id="mobileMenu" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+<!-- SEARCH -->
+<div class="search-overlay" id="searchOverlay">
+
+    <button class="close-search" id="closeSearch">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="search-box">
+
+        <p class="eyebrow">NOIRSCENT SEARCH</p>
+
+        <h2>Find Your <span>Signature</span></h2>
+
+        <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search perfume, collection..."
+                autocomplete="off">
+        </div>
+
+        <div class="search-results" id="searchResults"></div>
+
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-video">
+        <video autoplay muted loop playsinline
+            poster="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1800&q=85">
+
+            <source src="images/smok.mp4" type="video/mp4">
+
+        </video>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content" data-aos="fade-up">
+
+        <p class="eyebrow">THE ART OF FRAGRANCE</p>
+
+        <h1>
+            Leave a
+            <span>Beautiful</span>
+            Impression
+        </h1>
+
+        <p class="hero-description">
+            Discover refined fragrances crafted for those
+            who believe scent is the most unforgettable
+            accessory.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="btn btn-primary">
+                Explore Collection
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#about" class="btn btn-outline">
+                Discover Our Story
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>50+</strong>
+                <span>Signature Scents</span>
+            </div>
+
+            <div>
+                <strong>25K+</strong>
+                <span>Happy Clients</span>
+            </div>
+
+            <div>
+                <strong>4.9</strong>
+                <span>Average Rating</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#categories" class="scroll-down">
+        <span>SCROLL TO DISCOVER</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories section" id="categories">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <p class="eyebrow">CURATED FOR YOU</p>
+
+        <h2>
+            Featured <span>Categories</span>
+        </h2>
+
+        <p>
+            Explore our carefully selected fragrance worlds,
+            created to match every mood and personality.
+        </p>
+
+    </div>
+
+    <div class="category-grid">
+
+        <article class="category-card" data-category="Men">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85"
+                    alt="Men's perfume">
+            </div>
+
+            <div class="category-content">
+                <span>01</span>
+                <h3>For Men</h3>
+                <p>Bold, sophisticated fragrances.</p>
+
+                <button class="category-link" data-filter="Men">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="category-card" data-category="Women">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85"
+                    alt="Women's perfume">
+            </div>
+
+            <div class="category-content">
+                <span>02</span>
+                <h3>For Women</h3>
+                <p>Elegant, captivating scents.</p>
+
+                <button class="category-link" data-filter="Women">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="category-card" data-category="Oud">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?auto=format&fit=crop&w=900&q=85"
+                    alt="Oud perfume">
+            </div>
+
+            <div class="category-content">
+                <span>03</span>
+                <h3>Oud Collection</h3>
+                <p>Rare, exotic and unforgettable.</p>
+
+                <button class="category-link" data-filter="Oud">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="category-card" data-category="Gift">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85"
+                    alt="Luxury gift set">
+            </div>
+
+            <div class="category-content">
+                <span>04</span>
+                <h3>Gift Sets</h3>
+                <p>Beautifully packaged moments.</p>
+
+                <button class="category-link" data-filter="Gift">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products section" id="products">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <p class="eyebrow">THE COLLECTION</p>
+
+        <h2>
+            Signature <span>Fragrances</span>
+        </h2>
+
+        <p>
+            Timeless compositions created to become
+            your signature.
+        </p>
+
+    </div>
+
+    <div class="product-toolbar">
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="All">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="Men">
+                Men
+            </button>
+
+            <button class="filter-btn" data-filter="Women">
+                Women
+            </button>
+
+            <button class="filter-btn" data-filter="Unisex">
+                Unisex
+            </button>
+
+            <button class="filter-btn" data-filter="Oud">
+                Oud
+            </button>
+
+        </div>
+
+        <div class="sort-wrap">
+            <label for="sortProducts">Sort by</label>
+
+            <select id="sortProducts">
+                <option value="featured">Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="rating">Top Rated</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+
+    <div class="no-results" id="noResults">
+        <i class="fa-solid fa-wind"></i>
+        <h3>No fragrance found</h3>
+        <p>Try another search or category.</p>
+    </div>
+
+</section>
+
+<!-- LUXURY BANNER -->
+<section class="luxury-banner">
+
+    <div class="luxury-banner-bg"></div>
+
+    <div class="luxury-content">
+
+        <p class="eyebrow">NOIRSCENT EXCLUSIVE</p>
+
+        <h2>
+            A Fragrance
+            <span>Beyond Ordinary</span>
+        </h2>
+
+        <p>
+            Experience a world where rare ingredients,
+            master perfumery and timeless elegance meet.
+        </p>
+
+        <a href="#products" class="btn btn-primary">
+            Shop Signature Collection
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1100&q=85"
+            alt="Luxury perfume bottle">
+
+        <div class="about-badge">
+            <strong>10+</strong>
+            <span>Years of<br>Perfumery</span>
+        </div>
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>
+            Crafted with <span>Passion</span>
+        </h2>
+
+        <p>
+            At NoirScent, we believe fragrance is more
+            than a scent. It is memory, emotion and
+            identity bottled into a single unforgettable
+            experience.
+        </p>
+
+        <p>
+            Every composition is thoughtfully created
+            using refined ingredients and inspired by
+            the world's most beautiful moments.
+        </p>
+
+        <div class="about-features">
+
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                <div>
+                    <h4>Premium Ingredients</h4>
+                    <p>Carefully selected materials.</p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <div>
+                    <h4>Expertly Crafted</h4>
+                    <p>Designed by fragrance artists.</p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-gem"></i>
+                <div>
+                    <h4>Luxury Experience</h4>
+                    <p>From bottle to final note.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#contact" class="text-link">
+            Learn More About Us
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- OFFER -->
+<section class="offer">
+
+    <div class="offer-content">
+
+        <div>
+            <p class="eyebrow">LIMITED TIME</p>
+
+            <h2>Luxury Week</h2>
+
+            <p>
+                Enjoy <strong>20% OFF</strong>
+                selected signature fragrances.
+            </p>
+        </div>
+
+        <div class="countdown">
+
+            <div>
+                <strong id="days">00</strong>
+                <span>Days</span>
+            </div>
+
+            <div>
+                <strong id="hours">00</strong>
+                <span>Hours</span>
+            </div>
+
+            <div>
+                <strong id="minutes">00</strong>
+                <span>Minutes</span>
+            </div>
+
+            <div>
+                <strong id="seconds">00</strong>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+        <a href="#products" class="btn btn-light">
+            Shop The Offer
+        </a>
+
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews section" id="reviews">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">CLIENT LOVE</p>
+
+        <h2>
+            What They <span>Say</span>
+        </h2>
+
+        <p>
+            Thousands of fragrance lovers have found
+            their signature scent.
+        </p>
+
+    </div>
+
+    <div class="review-grid">
+
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+                “The fragrance is absolutely beautiful.
+                It feels luxurious from the packaging
+                to the final dry-down.”
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">A</div>
+
+                <div>
+                    <strong>Ananya Sharma</strong>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+                “Midnight Noir has become my go-to
+                evening perfume. The longevity is
+                genuinely impressive.”
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">R</div>
+
+                <div>
+                    <strong>Riya Mehta</strong>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+                “Beautiful website, premium packaging
+                and an even better fragrance. Definitely
+                ordering again.”
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">K</div>
+
+                <div>
+                    <strong>Karan Kapoor</strong>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="contact">
+
+    <div class="newsletter-inner">
+
+        <div>
+            <p class="eyebrow">JOIN THE CIRCLE</p>
+
+            <h2>
+                Stay in the <span>Know</span>
+            </h2>
+
+            <p>
+                Get early access to new launches,
+                exclusive offers and fragrance stories.
+            </p>
+        </div>
+
+        <form id="newsletterForm">
+
+            <div class="newsletter-input">
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Subscribe
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">N</span>
+
+                <span class="logo-text">
+                    NOIR<span>SCENT</span>
+                </span>
+            </a>
+
+            <p>
+                Luxury fragrances created to leave
+                an unforgettable impression.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="Youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h4>Shop</h4>
+            <a href="#products">All Fragrances</a>
+            <a href="#products">Men</a>
+            <a href="#products">Women</a>
+            <a href="#products">Oud</a>
+            <a href="#products">Gift Sets</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Information</h4>
+            <a href="#about">Our Story</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Customer Care</h4>
+            <a href="#contact">Contact Us</a>
+            <a href="#">FAQs</a>
+            <a href="#">Track Order</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Fragrance Guide</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 NoirScent. All rights reserved.</p>
+
+        <div>
+            <span>Secure Payments</span>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+        </div>
+
+    </div>
+</footer>
+
+<!-- CART BACKDROP -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+
+<!-- CART -->
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <div>
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h3>Shopping Bag</h3>
+        </div>
+
+        <button id="closeCart" class="close-cart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="empty-cart" id="emptyCart">
+
+        <i class="fa-solid fa-bag-shopping"></i>
+
+        <h4>Your bag is empty</h4>
+
+        <p>Discover your next signature scent.</p>
+
+        <a href="#products" class="btn btn-primary" id="emptyCartShop">
+            Shop Now
+        </a>
+
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+
+        <div class="cart-summary-row">
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">₹0</strong>
+        </div>
+
+        <div class="cart-summary-row">
+            <span>Shipping</span>
+            <strong id="cartShipping">Free</strong>
+        </div>
+
+        <div class="cart-summary-row total">
+            <span>Total</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Proceed to Checkout
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="secure-note">
+            <i class="fa-solid fa-lock"></i>
+            Secure checkout
+        </p>
+
+    </div>
+</aside>
+
+<!-- QUICK VIEW -->
+<div class="modal-backdrop" id="modalBackdrop">
+
+    <div class="quick-modal">
+
+        <button class="modal-close" id="modalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="quick-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+
+        <div class="quick-info">
+
+            <span class="product-category" id="modalCategory"></span>
+
+            <h2 id="modalName"></h2>
+
+            <div class="product-rating">
+                <span id="modalStars"></span>
+                <span id="modalRating"></span>
+            </div>
+
+            <div class="quick-price">
+                <strong id="modalPrice"></strong>
+                <del id="modalOldPrice"></del>
+            </div>
+
+            <p id="modalDescription"></p>
+
+            <div class="quick-notes">
+
+                <div>
+                    <span>TOP</span>
+                    <strong id="modalTop"></strong>
+                </div>
+
+                <div>
+                    <span>HEART</span>
+                    <strong id="modalHeart"></strong>
+                </div>
+
+                <div>
+                    <span>BASE</span>
+                    <strong id="modalBase"></strong>
+                </div>
+
+            </div>
+
+            <div class="modal-actions">
+
+                <button class="btn btn-primary" id="modalAddCart">
+                    Add to Bag
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+
+                <button class="modal-wishlist" id="modalWishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Added to bag</span>
+</div>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
