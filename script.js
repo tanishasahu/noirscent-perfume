@@ -7,6 +7,10 @@
    PRODUCT DATA
 ========================= */
 
+/* =========================
+   PRODUCT DATA
+========================= */
+
 const products = [
     {
         id: 1,
@@ -21,6 +25,7 @@ const products = [
         heart: "Rose",
         base: "Oud"
     },
+
     {
         id: 2,
         name: "Velvet Rose & Oud",
@@ -34,6 +39,7 @@ const products = [
         heart: "Rose",
         base: "Oud"
     },
+
     {
         id: 3,
         name: "Solesse Fleur",
@@ -47,6 +53,7 @@ const products = [
         heart: "Jasmine",
         base: "Musk"
     },
+
     {
         id: 4,
         name: "Imperial Santal",
@@ -60,6 +67,7 @@ const products = [
         heart: "Iris",
         base: "Sandalwood"
     },
+
     {
         id: 5,
         name: "Royal Oud Extreme",
@@ -69,10 +77,11 @@ const products = [
         rating: 4.7,
         image: "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85",
         description: "An intense oud fragrance with a rich royal character.",
-        top: "Pepper",
+        top: "Black Pepper",
         heart: "Leather",
         base: "Oud"
     },
+
     {
         id: 6,
         name: "Azure Coast",
@@ -85,9 +94,64 @@ const products = [
         top: "Lemon",
         heart: "Lavender",
         base: "Amber"
-    }
-];
+    },
 
+    {
+        id: 7,
+        name: "Golden Bloom",
+        category: "Women",
+        price: 3199,
+        oldPrice: 3999,
+        rating: 4.8,
+        image: "https://images.unsplash.com/photo-1563170351-be82bc888aa4?auto=format&fit=crop&w=900&q=85",
+        description: "A radiant floral fragrance with elegant and feminine notes.",
+        top: "Mandarin",
+        heart: "Peony",
+        base: "Vanilla"
+    },
+
+    {
+        id: 8,
+        name: "Noir Velvet",
+        category: "Unisex",
+        price: 4299,
+        oldPrice: 5199,
+        rating: 4.9,
+        image: "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=900&q=85",
+        description: "A mysterious unisex scent blending dark woods with soft amber.",
+        top: "Pink Pepper",
+        heart: "Violet",
+        base: "Dark Woods"
+    },
+
+    {
+        id: 9,
+        name: "Royal Amber",
+        category: "Men",
+        price: 4599,
+        oldPrice: 5499,
+        rating: 4.8,
+        image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85",
+        description: "A warm and luxurious amber fragrance created for evening elegance.",
+        top: "Cinnamon",
+        heart: "Amber",
+        base: "Tonka Bean"
+    },
+
+    {
+    id: 10,
+    name: "Eternal Jasmine",
+    category: "Women",
+    price: 2799,
+    oldPrice: 3399,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85",
+    description: "A timeless floral perfume centered around elegant jasmine and musk.",
+    top: "Bergamot",
+    heart: "Jasmine",
+    base: "White Musk"
+}
+];
 
 /* =========================
    CART & WISHLIST
